@@ -7,6 +7,7 @@ The mydwm branch is my config with patches applied
 * vanitygaps
 * [fakefullscreen](https://github.com/f-person/dotfiles/blob/master/dwm/dwm-fakefullscreentoggle-20190717.diff) (change to patch config.def.h)
 * focusonclick
+* notitle (fixed patch in notitle branch)
 
 ## To apply patches
 * git checkout main
