@@ -6,5 +6,5 @@ cd $abs
 git branch -m master main
 git remote remove origin
 git remote add origin git@github.com:birdalicious/dwm.git
-git remote add suckless git://git.suckless.org/dwm
-git branch main --set-upstream-to=suckless/master
+git remote add suck git://git.suckless.org/dwm
+git branch main --set-upstream-to=suck/master
