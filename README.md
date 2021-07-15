@@ -10,6 +10,12 @@ The mydwm branch is my config with patches applied
 * notitle (fixed patch in notitle branch)
 
 ## To apply patches
+First generate a diff for your changes to config.h with `git diff HEAD:config.def.h config.h > my.diff`
+Then apply the patch:
+Use `git apply -3 [--3way] <patch>` 
+Then apply my.diff
+
+For applying patches with branches
 * git checkout main
 * git pull suck 
 * git checkout -b <patch-branch>
