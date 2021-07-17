@@ -8,6 +8,11 @@ The mydwm branch is my config with patches applied
 * [fakefullscreen](https://github.com/f-person/dotfiles/blob/master/dwm/dwm-fakefullscreentoggle-20190717.diff) (change to patch config.def.h)
 * focusonclick
 * notitle (fixed patch in notitle branch)
+* scratchpad
+
+# Layouts
+* bottomstacked
+* centredmain
 
 ## To apply patches
 First generate a diff for your changes to config.h with `git diff HEAD:config.def.h config.h > my.diff`
