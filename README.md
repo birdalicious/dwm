@@ -9,6 +9,7 @@ The mydwm branch is my config with patches applied
 * focusonclick
 * notitle (fixed patch in notitle branch)
 * scratchpad
+* tab (Adds tabs when in monocle)
 
 # Layouts
 * bottomstacked
