@@ -14,6 +14,7 @@ The mydwm branch is my config with patches applied
 # Layouts
 * bottomstacked
 * centredmain
+* deck
 
 ## To apply patches
 First generate a diff for your changes to config.h with `git diff HEAD:config.def.h config.h > my.diff`
