@@ -80,8 +80,12 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *roficmd[]  = { "rofi", "-show", "run", NULL};
+static const char *roficmd[]  = { "rofi", "-show", "run", NULL };
 static const char *termcmd[]  = { "st", NULL };
+static const char *incredcmd[]  = { "redshift-change", "1000", NULL };
+static const char *decredcmd[]  = { "redshift-change", "-1000", NULL };
+static const char *resetredcmd[]  = { "redshift-change", "--toggle", NULL };
+static const char *browsercmd[]     = { "firefox", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
 
@@ -89,6 +93,7 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = roficmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	{ Mod4Mask,             	XK_c, 	   spawn,	   {.v = browsercmd} },
 	{ MODKEY|ShiftMask,             XK_f,      toggleFakeFullscreen,  {0}},
 	{ MODKEY,                       XK_grave,  togglescratch,  {.v = scratchpadcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
@@ -132,6 +137,9 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	{ MODKEY,             XK_Prior, spawn,         {.v = incredcmd } },
+	{ MODKEY,             XK_Next, spawn,         {.v = decredcmd } },
+	{ MODKEY,             XK_End, spawn,         {.v = resetredcmd } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)

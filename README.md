@@ -4,12 +4,12 @@ The mydwm branch is my config with patches applied
 
 # Patches Applied
 * swallow (may want to review use)
+* tab (Adds tabs when in monocle)
 * vanitygaps
 * [fakefullscreen](https://github.com/f-person/dotfiles/blob/master/dwm/dwm-fakefullscreentoggle-20190717.diff) (change to patch config.def.h)
 * focusonclick
 * notitle (fixed patch in notitle branch)
 * scratchpad
-* tab (Adds tabs when in monocle)
 
 # Layouts
 * bottomstacked
