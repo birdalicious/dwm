@@ -10,6 +10,7 @@ The mydwm branch is my config with patches applied
 * focusonclick
 * notitle (fixed patch in notitle branch)
 * scratchpad
+* focusmaster-return
 
 # Layouts
 * bottomstacked
